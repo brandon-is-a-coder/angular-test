@@ -5,20 +5,24 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { InputAreaComponent } from './input-area/input-area.component';
+import { OutputAreaComponent } from './output-area/output-area.component';
+import { ActivityWindowComponent } from './activity-window/activity-window.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component:  ActivityWindowComponent},
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    InputAreaComponent,
+    OutputAreaComponent,
+    ActivityWindowComponent
   ],
   bootstrap: [
     AppComponent
